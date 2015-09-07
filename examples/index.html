@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+<style>
+  @keyframes bounce {
+    from {
+      height: 200px;
+    }
+    to {
+      height: 250px;
+    }
+  }
+
+  .boxtracker-height {
+    height: 200px;
+    width: 300px;
+    background: cyan;
+    margin-left: 100px;
+    animation: bounce 3s infinite alternate;
+  }
+</style>
+
+<div class="boxtracker-height">
+</div>
+
+<script src="../bower_components/css-element-queries/src/ResizeSensor.js"></script>
+<script src="../lib/boxtracker.js"></script>
+<script>
+  [].forEach.call(document.querySelectorAll('.boxtracker-height'), function (elem) {
+    boxtracker.trackHeight(elem);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "boxtracker",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nikaspran/boxtracker",
+  "authors": [
+    "Nikas Praninskas <nikaspran@gmail.com>"
+  ],
+  "main": "dist/boxtracker.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "css-element-queries": "~0.3.0"
+  }
+}
